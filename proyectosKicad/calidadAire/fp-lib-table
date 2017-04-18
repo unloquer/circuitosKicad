@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name footprints_unloquer)(type KiCad)(uri /home/tioc/proyectos/activos/unloquer/circuitos/footprints/footprints_unloquer.pretty)(options "")(descr ""))
+)
