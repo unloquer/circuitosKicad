@@ -156,7 +156,7 @@ Text Label 3300 3150 0    60   ~ 0
 Text Label 3300 3050 0    60   ~ 0
 A1
 Text Label 4350 2950 3    60   ~ 0
-A1
+A0
 Text Label 6000 3550 0    60   ~ 0
 5V
 $Comp
@@ -450,7 +450,7 @@ Wire Wire Line
 	6300 2900 6250 2900
 Connection ~ 6250 2900
 Text Label 4250 2950 3    60   ~ 0
-A0
+A1
 Wire Wire Line
 	4250 2200 4250 2950
 Text Label 5100 3150 2    60   ~ 0

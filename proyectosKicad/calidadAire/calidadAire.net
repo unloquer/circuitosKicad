@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/tioc/proyectos/activos/unloquer/circuitos/calidadAire/calidadAire.sch)
-    (date "Sat 08 Apr 2017 08:15:37 PM -05")
+    (source /home/tioc/Desktop/calidadAireRepo/proyectosKicad/calidadAire/calidadAire.sch)
+    (date "Fri 28 Apr 2017 04:31:17 PM -05")
     (tool "Eeschema 4.0.6")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -65,7 +65,7 @@
       (tstamp 58E968C5))
     (comp (ref Q1)
       (value PN2222A)
-      (footprint TO_SOT_Packages_THT:TO-92_Molded_Narrow)
+      (footprint TO_SOT_Packages_THT:TO-92_Molded_Wide)
       (libsource (lib transistors) (part PN2222A))
       (sheetpath (names /) (tstamps /))
       (tstamp 58E96B7D))
@@ -235,12 +235,12 @@
   (libraries
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
-    (library (logical transistors)
-      (uri /usr/share/kicad/library/transistors.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
+    (library (logical transistors)
+      (uri /usr/share/kicad/library/transistors.lib))
     (library (logical unloquermcu_ver01_sch)
-      (uri /home/tioc/proyectos/activos/unloquer/circuitos/calidadAire/unloquermcu_ver01_sch.lib)))
+      (uri /home/tioc/Desktop/calidadAireRepo/proyectosKicad/calidadAire/unloquermcu_ver01_sch.lib)))
   (nets
     (net (code 1) (name /gpio2)
       (node (ref U1) (pin 4))
