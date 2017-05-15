@@ -153,19 +153,17 @@ F 3 "" H 6000 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5750 2550 2    60   ~ 0
-5vdc
-Text Label 4700 3300 1    60   ~ 0
-gpio5
+3.3vdc
 Text Label 6250 2850 0    60   ~ 0
 gpio4
 Text Label 6400 2600 0    60   ~ 0
 ground
 Text Label 3750 2500 3    60   ~ 0
-5vdc
+3.3vdc
 Text Label 4550 3300 1    60   ~ 0
 gpio4
 Text Label 3850 2500 3    60   ~ 0
-gpio5
+gpio16
 Text Label 3950 2500 3    60   ~ 0
 ground
 Text Label 3700 1800 3    60   ~ 0
@@ -173,7 +171,7 @@ ground
 Text Label 3800 1800 3    60   ~ 0
 5vdc
 Text Label 3900 1800 3    60   ~ 0
-gpio0
+gpio2
 Text Label 3550 3300 1    60   ~ 0
 5vdc
 Wire Wire Line
@@ -199,8 +197,6 @@ Wire Wire Line
 	6200 2650 6200 2950
 Wire Wire Line
 	6200 2950 6000 2950
-Wire Wire Line
-	4700 3300 4700 3550
 Wire Wire Line
 	6250 2850 6200 2850
 Connection ~ 6200 2850
@@ -232,18 +228,54 @@ Text Label 3700 4850 3    60   ~ 0
 ground
 Wire Wire Line
 	3700 4850 3700 4750
-NoConn ~ 3900 4750
 NoConn ~ 4050 4750
 NoConn ~ 4200 4750
 NoConn ~ 4500 4750
-NoConn ~ 4650 4750
 NoConn ~ 3550 4750
 NoConn ~ 4900 4750
-NoConn ~ 4200 3550
 NoConn ~ 4050 3550
 NoConn ~ 3900 3550
-Text Label 4400 3300 1    60   ~ 0
-gpio0
+Text Label 4200 3350 1    60   ~ 0
+gpio2
+Text Label 4650 4900 3    60   ~ 0
+gpio16
 Wire Wire Line
-	4400 3300 4400 3550
+	4650 4750 4650 4900
+NoConn ~ 4700 3550
+Wire Wire Line
+	4200 3350 4200 3550
+NoConn ~ 4400 3550
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 591A3D89
+P 7250 2500
+F 0 "#FLG?" H 7250 2575 50  0001 C CNN
+F 1 "PWR_FLAG" H 7250 2674 50  0000 C CNN
+F 2 "" H 7250 2500 50  0001 C CNN
+F 3 "" H 7250 2500 50  0001 C CNN
+	1    7250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 591A3DCF
+P 7250 2600
+F 0 "#PWR?" H 7250 2450 50  0001 C CNN
+F 1 "+3.3V" H 7265 2773 50  0000 C CNN
+F 2 "" H 7250 2600 50  0001 C CNN
+F 3 "" H 7250 2600 50  0001 C CNN
+	1    7250 2600
+	-1   0    0    1   
+$EndComp
+Text Label 7050 2550 2    60   ~ 0
+3.3vdc
+Wire Wire Line
+	7250 2500 7250 2600
+Wire Wire Line
+	7050 2550 7250 2550
+Connection ~ 7250 2550
+Text Label 3900 4900 3    60   ~ 0
+3.3vdc
+Wire Wire Line
+	3900 4900 3900 4750
 $EndSCHEMATC
